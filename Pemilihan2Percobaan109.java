@@ -11,16 +11,9 @@ public class Pemilihan2Percobaan109 {
         tahun = Absen.nextInt();
 
         if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0) 
-            if ((tahun % 400 ) == 0) {
-                System.out.print( tahun + "  Tahun Kabisat  ");
-         } else {
-            System.out.println( tahun + "bukan Tahun Kabisat ");
-         } else {
-            System.out.println( tahun + " Tahun Kabisat ");
-         } 
-         }else {
-            System.out.println(tahun + "bukan Tahun Kabisat ");
+            
+         } {
+        ;
          }
             
           }
