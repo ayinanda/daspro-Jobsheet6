@@ -32,20 +32,12 @@ public class Pemilihan2Percobaan2 {
             harga = 15000;
             System.out.println("Harga Paket Bunding = " + harga);
         } else {
-            System.out.println("Pilihan menu tidak valid.");
+            System.out.println(" Masukkan pilihan menu dengan benar ");
             return;
-        }
-
-        if (member.equalsIgnoreCase("y")) {
-            diskon = 0.10;
-            System.out.println(" Besar diskon 10% ");
-            
+        } System.out.println("Total bayar " + harga);
+         
         } 
-        totalBayar = harga - (harga * diskon);
-        System.out.println("Total bayar setelah diskon = " + totalBayar);
-        System.out.println("-------------------------------------");    
         
 
-     
     }
-}
+
