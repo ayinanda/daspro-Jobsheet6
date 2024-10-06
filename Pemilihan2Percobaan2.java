@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Pemilihan2Percobaan2 {
     public static void main(String[] args) {
-        Scanner Absen = new Scanner(System.in);
+        Scanner Absen09 = new Scanner(System.in);
 
-        String member;
+        String member, metodePembayaran;
         int menu;
         double harga = 0, totalBayar, diskon = 0 ;
 
@@ -16,10 +16,10 @@ public class Pemilihan2Percobaan2 {
         System.out.print(" 3. Paket Bundling (Rice bowl + ice tea) ");
         System.out.print("-------------------------");
         System.out.print(" Masukkan angka dari menu yang anda pilih: ");
-        menu = Absen.nextInt();
-        Absen.nextLine();
+        menu = Absen09.nextInt();
+        Absen09.nextLine();
         System.out.print(" Apakah memiliki member (y/n) ? = ");
-        member = Absen.nextLine();
+        member = Absen09.nextLine();
         System.out.println("-----------------------------------------");
          
         if (menu == 1) {
@@ -35,6 +35,19 @@ public class Pemilihan2Percobaan2 {
             System.out.println(" Masukkan pilihan menu dengan benar ");
             return;
         } System.out.println("Total bayar " + harga);
+        
+        System.out.print("Metode pembayaran (Cash/QRIS) ? = ");
+        metodePembayaran = Absen09.nextLine();
+        if (metodePembayaran.equalsIgnoreCase("QRIS")) 
+        diskon = 1000; {
+            System.out.print(" Diskon sebesar 1000 untuk pembayaran via QRIS ");
+        
+            totalBayar = harga - diskon;
+            System.out.println("-----------------------------------------");
+            System.out.println("Total Bayar = Rp. " + totalBayar); 
+
+            
+        }
          
         } 
         
